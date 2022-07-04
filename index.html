@@ -406,16 +406,49 @@
           </li>
         </ul>
       </div>
+      <div class="subscribe">
+        <label for="subscribe">
+          <p class="title">Подпишитесь на рассылку</p>
+        </label>
+        <form class="centering" name="signup_form" autocomplete="on" novalidate>
+          <input class="subscribe-mail-input" type="email" name="user-subscribe-email" placeholder="E-mail"
+            id="subscribe" />
+          <button class="subscribe-btn centering" type="submit">Подписаться
+            <svg class="subscription-icon" width="24" height="24">
+              <use href="./images/icons.svg#send"></use>
+            </svg>
+          </button>
+        </form>
+      </div>
 
     </div>
   </footer>
-  <div class="backdrop is-hidden" data-modal>
+  <div class="backdrop " data-modal>
     <div class="modal">
-      <button class="close centering" data-modal-close>
+      <button class="close centering" type="button" data-modal-close>
         <svg class="close-icon" width="11" height="11">
           <use href="./images/icons.svg#modal-close"></use>
         </svg>
       </button>
+      <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+      <form>
+        <label class="input-label" for="user-name">Имя</label>
+        <input class="modal-input" type="text" name="user-name" placeholder="" id="user-name">
+        <svg class="input-icon" width="12" height="12">
+          <use href="./images/icons.svg#icon-name"></use>
+        </svg>
+        <label class="input-label" for="user-tel">Телефон</label>
+        <input class="modal-input" type="tel" name="user-tel" placeholder="" id="user-tel">
+        <label class="input-label" for="user-email">Почта</label>
+        <input class="modal-input" type="email" name="user-email" placeholder="" id="user-email">
+        <label class="input-label" for="user-coment">Комментарий</label>
+        <textarea class="modal-input coment" name="user-coment" id="user-coment" placeholder="Введите текст"></textarea>
+      </form>
+      <div class="accept">
+        <input type="checkbox" name="accept-check" id="accept">
+        <label for="accept">Соглашаюсь с рассылкой и принимаю <span>Условия договора</span></label>
+      </div>
+      <button class="subscribe-btn centering send" type="submit">Отправить</button>
     </div>
   </div>
   <script src="./js/modal.js"></script>
