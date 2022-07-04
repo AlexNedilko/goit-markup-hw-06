@@ -432,17 +432,32 @@
       </button>
       <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
       <form>
-        <label class="input-label" for="user-name">Имя</label>
-        <input class="modal-input" type="text" name="user-name" placeholder="" id="user-name">
-        <svg class="input-icon" width="12" height="12">
-          <use href="./images/icons.svg#icon-name"></use>
-        </svg>
-        <label class="input-label" for="user-tel">Телефон</label>
-        <input class="modal-input" type="tel" name="user-tel" placeholder="" id="user-tel">
-        <label class="input-label" for="user-email">Почта</label>
-        <input class="modal-input" type="email" name="user-email" placeholder="" id="user-email">
-        <label class="input-label" for="user-coment">Комментарий</label>
-        <textarea class="modal-input coment" name="user-coment" id="user-coment" placeholder="Введите текст"></textarea>
+        <div class="input-field">
+          <label class="input-label" for="user-name">Имя</label>
+          <input class="modal-input" type="text" name="user-name" placeholder="" id="user-name">
+          <svg class="input-icon" width="12" height="12">
+            <use href="./images/icons.svg#icon-name"></use>
+          </svg>
+        </div>
+        <div class="input-field">
+          <label class="input-label" for="user-tel">Телефон</label>
+          <input class="modal-input" type="tel" name="user-tel" placeholder="" id="user-tel">
+          <svg class="input-icon" width="13" height="13">
+            <use href="./images/icons.svg#icon-tel"></use>
+          </svg>
+        </div>
+        <div class="input-field">
+          <label class="input-label" for="user-email">Почта</label>
+          <input class="modal-input" type="email" name="user-email" placeholder="" id="user-email">
+          <svg class="input-icon" width="15" height="12">
+            <use href="./images/icons.svg#icon-email"></use>
+          </svg>
+        </div>
+        <div class="input-field">
+          <label class="input-label" for="user-coment">Комментарий</label>
+          <textarea class="modal-input coment" name="user-coment" id="user-coment"
+            placeholder="Введите текст"></textarea>
+        </div>
       </form>
       <div class="accept">
         <input type="checkbox" name="accept-check" id="accept">
